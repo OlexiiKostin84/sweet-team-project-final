@@ -1,0 +1,155 @@
+<div class="backdrop is-hidden" data-modal-hero data-modal-sellers>
+  <div class="modal-buy-now">
+    <button class="modal-btn-buy-close" data-modal-close type="button">
+      <svg class="modal-icon-buy-close" width="14" height="14">
+        <use href="./img/sgv-sprite.svg#icon-close-black-18dp"></use>
+      </svg>
+    </button>
+    <h2 class="section-title"><span class="accent-text">BUY</span> NOW</h2>
+    <div class="modal-buy-milk">
+      <ul class="modal-buy-information">
+        <li class="modal-buy-li">
+          <picture>
+            <source
+              srcset="
+                /img/modal-buy-now/Black-chocolate@1x.jpg 1x,
+                /img/modal-buy-now/Black-chocolate@2x.jpg 2x
+              "
+            />
+            <img
+              class="modal-buy-black-choco"
+              src="./img/modal-buy-now/Black-chocolate@1x.jpg"
+              alt="Black-chocolade"
+              width="84"
+              height="69"
+            />
+          </picture>
+          <button class="modal-buy-btn-price">100 g</button>
+        </li>
+        <li class="modal-buy-li">
+          <picture>
+            <source
+              srcset="
+                /img/modal-buy-now/kinder-chocolate@1x.jpg 1x,
+                /img/modal-buy-now/kinder-chocolate@2x.jpg 2x
+              "
+            />
+            <img
+              class="modal-buy-black-choco"
+              src="./img/modal-buy-now/kinder-chocolate@1x.jpg"
+              alt="kinder-chocolate"
+              width="84"
+              height="69"
+            />
+          </picture>
+          <button class="modal-buy-btn-price">200 g</button>
+        </li>
+        <li class="modal-buy-li">
+          <picture>
+            <source
+              srcset="
+                /img/modal-buy-now/Milk-chocolate@1x.jpg 1x,
+                /img/modal-buy-now/Milk-chocolate@2x.jpg 2x
+              "
+            />
+            <img
+              class="modal-buy-black-choco"
+              src="./img/modal-buy-now/Milk-chocolate@1x.jpg"
+              alt="Milk-chocolate"
+              width="84"
+              height="69"
+            />
+          </picture>
+          <button class="modal-buy-btn-price">300 g</button>
+        </li>
+      </ul>
+    </div>
+    <form name="modal-buy-form">
+      <label class="modal-buy-label">Personal information</label>
+      <div class="modal-buy-wrapper">
+        <input
+          required
+          placeholder="Name"
+          class="modal-buy-now-text"
+          type="text"
+          pattern="^[A-Za-z ]+$"
+          name="modal-name"
+          id="modal-name"
+          minlength="2"
+          maxlength="30"
+          title="Type your name. Use letters of the Latin alphabet only. "
+        />
+        <input
+          required
+          placeholder="Surname"
+          class="modal-buy-now-text"
+          type="text"
+          pattern="^[A-Za-z ]+$"
+          name="modal-surname"
+          id="modal-surname"
+          minlength="2"
+          maxlength="30"
+          title="Type your name. Use letters of the Latin alphabet only. "
+        />
+      </div>
+      <label class="modal-buy-label">Email</label>
+      <div class="modal-buy-wrapper">
+        <input
+          required
+          placeholder="Enter your email"
+          class="modal-buy-now-input"
+          type="email"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          name="modal-email"
+          id="modal-email"
+        />
+      </div>
+      <label class="modal-buy-label">Phone number</label>
+      <div class="modal-buy-wrapper">
+        <label class="modal-buy-code" for="tel_form">+380</label>
+        <input
+          required
+          placeholder="Phone number"
+          class="modal-buy-now-input-phone"
+          type="text"
+          pattern="[0-9]{2}[0-9]{3}[0-9]{4}"
+          maxlength="9"
+          title="Enter your number. Use only numbers. "
+          name="modal-phone"
+          id="tel_form"
+        />
+        <svg class="modal-icon-buy-ukr" width="24" height="24">
+          <use href="./img/sgv-sprite.svg#icon-Ukr"></use>
+        </svg>
+      </div>
+      <label class="modal-buy-label">Card number</label>
+      <div class="modal-buy-wrapper">
+        <input
+          required
+          placeholder="Enter card"
+          class="modal-buy-now-input"
+          type="text"
+          pattern="[0-9]{13,19}"
+          maxlength="19"
+          title="Enter your card. Use only numbers. "
+          name="modal-card"
+          id="modal-card"
+        />
+        <svg class="modal-icon-buy-card" width="32" height="21">
+          <use href="./img/sgv-sprite.svg#icon-MasterCard"></use>
+        </svg>
+      </div>
+      <label class="modal-buy-label">Comment</label>
+      <div class="modal-buy-wrapper">
+        <textarea
+          placeholder="Enter text"
+          class="modal-buy-comment"
+          name="modal-comment"
+          id="modal-comment"
+          rows="6"
+        ></textarea>
+      </div>
+      <button class="modal-btn-submit" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

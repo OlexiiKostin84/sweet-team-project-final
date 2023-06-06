@@ -1,0 +1,62 @@
+<div class="backdrop is-hidden" data-modal-reviews>
+  <div class="modal-window-review">
+    <h2 class="review-title section-title">
+      LEAVE A REVIEW <br />
+      ABOUT
+      <span class="review-title-accent">OUR CHOCoLATE</span>
+    </h2>
+    <form action="modal-form-review">
+      <input
+        class="reviewer-name reviewer-form-field"
+        type="text"
+        pattern="^[A-Za-z ]+$"
+        minlength="2"
+        maxlength="30"
+        title="Type your name. Use letters of the Latin alphabet only. "
+        name="name_form"
+        placeholder="Name"
+        required
+      />
+      <input
+        class="reviewer-email reviewer-form-field"
+        type="email"
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+        name="email_form"
+        placeholder="Enter your email"
+        required
+      />
+
+      <div class="phone-wrapper">
+        <div class="phone-flex">
+          <svg class="ua-flag" width="24" height="24">
+            <use href="./img/sgv-sprite.svg#ua"></use>
+          </svg>
+          <label class="phone-uacode" for="tel_form2">+380</label>
+        </div>
+        <input
+          class="reviewer-tel reviewer-form-field"
+          type="tel"
+          name="tel_form"
+          pattern="[0-9]{2}[0-9]{3}[0-9]{4}"
+          maxlength="9"
+          title="Enter your cell number. Use only numbers. "
+          id="tel_form2"
+          placeholder="Phone number"
+          required
+        />
+      </div>
+      <textarea
+        class="reviewer-text reviewer-form-field"
+        name="text_form"
+        placeholder="Enter text"
+        required
+      ></textarea>
+      <button class="button btn-orange" type="submit">Send</button>
+    </form>
+    <button type="button" class="button-close" data-modal-close-reviews>
+      <svg class="modal-button-icon" width="12" height="12">
+        <use href="./img/sgv-sprite.svg#icon-close-black-18dp"></use>
+      </svg>
+    </button>
+  </div>
+</div>
